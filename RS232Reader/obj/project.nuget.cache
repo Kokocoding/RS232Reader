@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "lq+W7Ydj3+T3IGJd6Y47rIB4TQcxLBhGTV5Y/qX/r8qtGWslqpzsVNWATDFMIykcq0uiD226nddTLeG1dCwz3A==",
+  "success": true,
+  "projectFilePath": "D:\\Project\\RS232Reader\\RS232Reader\\RS232Reader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\InproKo\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\InproKo\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\InproKo\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\InproKo\\.nuget\\packages\\runtime.native.system.io.ports\\7.0.0\\runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\InproKo\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\InproKo\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\7.0.0\\runtime.osx-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\InproKo\\.nuget\\packages\\system.io.ports\\7.0.0\\system.io.ports.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
