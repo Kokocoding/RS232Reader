@@ -8,12 +8,6 @@ class Program
 
     static void Main(string[] args)
     {
-        serialPort = new SerialPort("COM6", 9600);
-        serialPort.DataReceived += SerialPortDataReceived;
-
-        // 開啟串口
-        serialPort.Open();        
-
         //Console.WriteLine("Press any key to send data.");
         //Console.ReadKey();
 
@@ -26,6 +20,18 @@ class Program
 
         //// 關閉串口
         //serialPort.Close();
+
+        Console.WriteLine("Enter the COM port name:");
+        string comPort = Console.ReadLine();
+
+        Console.WriteLine("Enter the baud rate:");
+        int baudRate = int.Parse(Console.ReadLine());
+
+        serialPort = new SerialPort(comPort, baudRate);
+        serialPort.DataReceived += SerialPortDataReceived;
+
+        // 開啟串口
+        serialPort.Open();
 
         Console.WriteLine("Press any key to exit.");
         Console.ReadKey();
@@ -41,15 +47,11 @@ class Program
 
         // 读取字节数据到缓冲区
         serialPort.Read(buffer, 0, bufferSize);
-        //if (buffer[1] == 0xA1)
-        //{
 
-            // 处理接收到的字节数据
-            ProcessReceivedBytes(buffer);
-            Thread.Sleep(100);
-            SendData(buffer);
-        //}
-       
+        // 处理接收到的字节数据
+        ProcessReceivedBytes(buffer);
+        Thread.Sleep(100);
+        SendData(buffer);
     }
 
     static void ProcessReceivedBytes(byte[] buffer)
