@@ -72,7 +72,7 @@ class Program
 
         // 在這裡添加相應的處理邏輯，以應對傳送後的操作
         Console.WriteLine("Sent: " );
-        Console.Write(BitConverter.ToString(data));
+        Console.Write($"{DateTime.Now:HH:mm:ss.fff} : {BitConverter.ToString(data)}");
         Console.WriteLine();
     }
 }
